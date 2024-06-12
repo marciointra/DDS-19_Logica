@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*Escreva um algoritmo que calcule a média de quatro notas e determine se o aluno foi aprovado (média >= 7), em recuperação (média >= 5 e < 7) ou reprovado (média < 5).*/
+
+    let n = [] ; 
+;   let soma;
+    let media;
+    
+    for (let i=0;i<4;i++){
+        n[i] = prompt("Digite a ",i+1,"ª nota:")
+        n[i] = Number(n[i])
+        soma += n[i]
+    }
+        media = soma/4
+        if (media >= 7){
+            console.log("Sua media foi: ",media," Aluno aprovado! ")
+        }
+        else if(media >= 5 && mdia < 7){
+            console.log("Sua media foi: ",media,"Aluno de recuperação! ")
+        }else{
+            console.log("Sua media foi: ",media,"Aluno de reprovado! ")
+        }
+    </script>
+</body>
+</html>
