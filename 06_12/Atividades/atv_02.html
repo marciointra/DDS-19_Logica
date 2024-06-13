@@ -2,12 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width+ initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <script>
-    /*Desenvolva um programa que leia a idade de uma pessoa e determine a sua categoria: infantil (0-12 anos), adolescente (13-17 anos), adulto (18-59 anos) ou idoso (60 anos ou mais).*/
+    /*Desenvolva um programa que leia a idade de uma pessoa e determine a sua categoria: infantil (0-12 anos)+ adolescente (13-17 anos)+ adulto (18-59 anos) ou idoso (60 anos ou mais).*/
+        let idade = 0;
+        
+        idade = prompt("Digite sua idade:")
+        idade = Number(idade)
+
+        if(idade <= 12){
+            alert("Idade = "+idade+" (Categoria Infantil)")
+        }
+        else if(idade > 12 && idade <= 17){
+            alert("Idade = "+idade+" (Categoria Adolescente)")
+        }
+        else if(idade >= 18 && idade < 60){
+            alert("Idade = "+idade+" (Categoria Adulto)")
+        }else{
+            alert("Idade = "+idade+" (Categoria Idoso)")
+        }
 
     </script>
 </body>
