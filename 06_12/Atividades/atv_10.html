@@ -7,8 +7,15 @@
 </head>
 <body>
     <script>
-    /*Escreva um programa que leia 10 nÃºmeros e armazene em um array. Em seguida, encontre e exiba o maior e o menor nÃºmero armazenado.*/
-        
+    /*Escreva um programa que leia 10 números e armazene em um array. Em seguida, encontre e exiba o maior e o menor número armazenado.*/
+    let num = [], numMaior = 0;
+    for (let i=0;i<10;i++){
+        num[i] = Number(prompt("Digite o "+(i+1)+"º valor: "))
+        if (num[i]>numMaior){
+            numMaior = num[i]
+        }
+    }
+    alert("O maior valor digitado foi: "+numMaior)    
     </script>
 </body>
 </html>

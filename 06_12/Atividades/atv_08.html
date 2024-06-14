@@ -7,8 +7,22 @@
 </head>
 <body>
     <script>
-    /*Desenvolva um programa que leia 5 nÃºmeros e armazene em um array. Em seguida, exiba os nÃºmeros na ordem inversa.*/    
-    
+/* Desenvolva um programa que leia 5 números e armazene em um array. Em seguida, exiba os números na ordem inversa. */
+
+let i = 0, result = 0;
+let array = [];
+
+    while (i<10){
+        const num = prompt("Digite um número qualquer: ");
+        array.push(num);
+        i++;
+    }
+    result = "Os números digitados foram: ";
+    for (i = array.length - 1; i >= 0; i--){
+      result += array[i] + " ";
+    }
+    alert(result);
+
     </script>
 </body>
 </html>

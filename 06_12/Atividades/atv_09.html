@@ -7,8 +7,15 @@
 </head>
 <body>
     <script>
-    /*Crie um algoritmo que leia 10 nÃºmeros e armazene em um array. Em seguida, calcule e exiba a soma de todos os nÃºmeros armazenados.*/
-        
+/* Crie um algoritmo que leia 10 números e armazene em um array. Em seguida, calcule e exiba a soma de todos os números armazenados. */
+    let i = 0, array = [], soma = 0;
+    while (i<10){
+        const num = parseFloat(prompt("Digite um número qualquer: "));
+        array[i] = num;
+        soma += num;
+        i++;
+    }
+    alert("A soma de todos os números digitados é: " + soma);
     </script>
 </body>
 </html>
